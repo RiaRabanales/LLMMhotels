@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Gestió d'hotels a Espanya per Maria Rabanales</title>
+    <title>Gestió d'hotels a Espanya per Maria Rabanales - BACKEND</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script src="javascript/myscripts.js"></script>
     <!--El codi de validació és massa llarg; ho vull separar.-->
@@ -232,11 +232,14 @@
         <div class="elementHotel">
             <label>Altres serveis:</label>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament1" name="checkboxs" value="parquing" onclick="controlPagament('pagament1', 'subelementPagament1');">pàrquing
+                <input type="checkbox" id="pagament1" name="checkboxs" value="parquing"
+                    onclick="controlPagament('pagament1', 'subelementPagament1');">pàrquing
                 <div class="subelementPagament" id="subelementPagament1">
-                    <input type="radio" id="pagament1opcio1" name="parquingpreu" value="0" checked onclick="controlDisablePagament('pagament1');" />
+                    <input type="radio" id="pagament1opcio1" name="parquingpreu" value="0" checked
+                        onclick="controlDisablePagament('pagament1');" />
                     <label for="pagament1opcio1">gratis</label>
-                    <input type="radio" id="pagament1opcio2" name="parquingpreu" class="checkboxs" onclick="controlDisablePagament('pagament1');"/>
+                    <input type="radio" id="pagament1opcio2" name="parquingpreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament1');" />
                     <label for="pagament1opcio2">suplement adicional</label>
                     <input type="number" id="pagament1opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -252,11 +255,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament2" name="checkboxs" value="bicis" onclick="controlPagament('pagament2', 'subelementPagament2');">lloguer de bicicletes
+                <input type="checkbox" id="pagament2" name="checkboxs" value="bicis"
+                    onclick="controlPagament('pagament2', 'subelementPagament2');">lloguer de bicicletes
                 <div class="subelementPagament" id="subelementPagament2">
-                    <input type="radio" id="pagament2opcio1" name="bicispreu" value="0" checked onclick="controlDisablePagament('pagament2');" />
+                    <input type="radio" id="pagament2opcio1" name="bicispreu" value="0" checked
+                        onclick="controlDisablePagament('pagament2');" />
                     <label for="pagament2opcio1">gratis</label>
-                    <input type="radio" id="pagament2opcio2" name="bicispreu" class="checkboxs" onclick="controlDisablePagament('pagament2');"/>
+                    <input type="radio" id="pagament2opcio2" name="bicispreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament2');" />
                     <label for="pagament2opcio2">suplement adicional</label>
                     <input type="number" id="pagament2opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -272,11 +278,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament3" name="checkboxs" value="cotxes" onclick="controlPagament('pagament3', 'subelementPagament3');">lloguer de cotxes
+                <input type="checkbox" id="pagament3" name="checkboxs" value="cotxes"
+                    onclick="controlPagament('pagament3', 'subelementPagament3');">lloguer de cotxes
                 <div class="subelementPagament" id="subelementPagament3">
-                    <input type="radio" id="pagament3opcio1" name="cotxespreu" value="0" checked onclick="controlDisablePagament('pagament3');" />
+                    <input type="radio" id="pagament3opcio1" name="cotxespreu" value="0" checked
+                        onclick="controlDisablePagament('pagament3');" />
                     <label for="pagament3opcio1">gratis</label>
-                    <input type="radio" id="pagament3opcio2" name="cotxespreu" class="checkboxs" onclick="controlDisablePagament('pagament3');"/>
+                    <input type="radio" id="pagament3opcio2" name="cotxespreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament3');" />
                     <label for="pagament3opcio2">suplement adicional</label>
                     <input type="number" id="pagament3opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -292,11 +301,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament4" name="checkboxs" value="trasllat" onclick="controlPagament('pagament4', 'subelementPagament4');">servei de trasllat
+                <input type="checkbox" id="pagament4" name="checkboxs" value="trasllat"
+                    onclick="controlPagament('pagament4', 'subelementPagament4');">servei de trasllat
                 <div class="subelementPagament" id="subelementPagament4">
-                    <input type="radio" id="pagament4opcio1" name="trasllatpreu" value="0" checked onclick="controlDisablePagament('pagament4');" />
+                    <input type="radio" id="pagament4opcio1" name="trasllatpreu" value="0" checked
+                        onclick="controlDisablePagament('pagament4');" />
                     <label for="pagament4opcio1">gratis</label>
-                    <input type="radio" id="pagament4opcio2" name="trasllatpreu" class="checkboxs" onclick="controlDisablePagament('pagament4');"/>
+                    <input type="radio" id="pagament4opcio2" name="trasllatpreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament4');" />
                     <label for="pagament4opcio2">suplement adicional</label>
                     <input type="number" id="pagament4opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -312,11 +324,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament5" name="checkboxs" value="piscina" onclick="controlPagament('pagament5', 'subelementPagament5');">piscina
+                <input type="checkbox" id="pagament5" name="checkboxs" value="piscina"
+                    onclick="controlPagament('pagament5', 'subelementPagament5');">piscina
                 <div class="subelementPagament" id="subelementPagament5">
-                    <input type="radio" id="pagament5opcio1" name="piscinapreu" value="0" checked onclick="controlDisablePagament('pagament5');" />
+                    <input type="radio" id="pagament5opcio1" name="piscinapreu" value="0" checked
+                        onclick="controlDisablePagament('pagament5');" />
                     <label for="pagament5opcio1">gratis</label>
-                    <input type="radio" id="pagament5opcio2" name="piscinapreu" class="checkboxs" onclick="controlDisablePagament('pagament5');"/>
+                    <input type="radio" id="pagament5opcio2" name="piscinapreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament5');" />
                     <label for="pagament5opcio2">suplement adicional</label>
                     <input type="number" id="pagament5opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -332,11 +347,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament6" name="checkboxs" value="spa" onclick="controlPagament('pagament6', 'subelementPagament6');">spa /sauna
+                <input type="checkbox" id="pagament6" name="checkboxs" value="spa"
+                    onclick="controlPagament('pagament6', 'subelementPagament6');">spa /sauna
                 <div class="subelementPagament" id="subelementPagament6">
-                    <input type="radio" id="pagament6opcio1" name="spapreu" value="0" checked onclick="controlDisablePagament('pagament6');" />
+                    <input type="radio" id="pagament6opcio1" name="spapreu" value="0" checked
+                        onclick="controlDisablePagament('pagament6');" />
                     <label for="pagament6opcio1">gratis</label>
-                    <input type="radio" id="pagament6opcio2" name="spapreu" class="checkboxs" onclick="controlDisablePagament('pagament6');"/>
+                    <input type="radio" id="pagament6opcio2" name="spapreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament6');" />
                     <label for="pagament6opcio2">suplement adicional</label>
                     <input type="number" id="pagament6opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -352,11 +370,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament7" name="checkboxs" value="gimnas" onclick="controlPagament('pagament7', 'subelementPagament7');">gimnàs
+                <input type="checkbox" id="pagament7" name="checkboxs" value="gimnas"
+                    onclick="controlPagament('pagament7', 'subelementPagament7');">gimnàs
                 <div class="subelementPagament" id="subelementPagament7">
-                    <input type="radio" id="pagament7opcio1" name="gimnaspreu" value="0" checked onclick="controlDisablePagament('pagament7');" />
+                    <input type="radio" id="pagament7opcio1" name="gimnaspreu" value="0" checked
+                        onclick="controlDisablePagament('pagament7');" />
                     <label for="pagament7opcio1">gratis</label>
-                    <input type="radio" id="pagament7opcio2" name="gimnaspreu" class="checkboxs" onclick="controlDisablePagament('pagament7');"/>
+                    <input type="radio" id="pagament7opcio2" name="gimnaspreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament7');" />
                     <label for="pagament7opcio2">suplement adicional</label>
                     <input type="number" id="pagament7opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -372,11 +393,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament8" name="checkboxs" value="discoteca" onclick="controlPagament('pagament8', 'subelementPagament8');">discoteca
+                <input type="checkbox" id="pagament8" name="checkboxs" value="discoteca"
+                    onclick="controlPagament('pagament8', 'subelementPagament8');">discoteca
                 <div class="subelementPagament" id="subelementPagament8">
-                    <input type="radio" id="pagament8opcio1" name="discotecapreu" value="0" checked onclick="controlDisablePagament('pagament8');" />
+                    <input type="radio" id="pagament8opcio1" name="discotecapreu" value="0" checked
+                        onclick="controlDisablePagament('pagament8');" />
                     <label for="pagament8opcio1">gratis</label>
-                    <input type="radio" id="pagament8opcio2" name="discotecapreu" class="checkboxs" onclick="controlDisablePagament('pagament8');"/>
+                    <input type="radio" id="pagament8opcio2" name="discotecapreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament8');" />
                     <label for="pagament8opcio2">suplement adicional</label>
                     <input type="number" id="pagament8opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -392,11 +416,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament9" name="checkboxs" value="bugaderia" onclick="controlPagament('pagament9', 'subelementPagament9');">bugaderia
+                <input type="checkbox" id="pagament9" name="checkboxs" value="bugaderia"
+                    onclick="controlPagament('pagament9', 'subelementPagament9');">bugaderia
                 <div class="subelementPagament" id="subelementPagament9">
-                    <input type="radio" id="pagament9opcio1" name="bugaderiapreu" value="0" checked onclick="controlDisablePagament('pagament9');" />
+                    <input type="radio" id="pagament9opcio1" name="bugaderiapreu" value="0" checked
+                        onclick="controlDisablePagament('pagament9');" />
                     <label for="pagament9opcio1">gratis</label>
-                    <input type="radio" id="pagament9opcio2" name="bugaderiapreu" class="checkboxs" onclick="controlDisablePagament('pagament9');"/>
+                    <input type="radio" id="pagament9opcio2" name="bugaderiapreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament9');" />
                     <label for="pagament9opcio2">suplement adicional</label>
                     <input type="number" id="pagament9opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -412,11 +439,14 @@
                 </div>
             </div>
             <div class="elementPagament">
-                <input type="checkbox" id="pagament10" name="checkboxs" value="wifi" onclick="controlPagament('pagament10', 'subelementPagament10');">wifi
+                <input type="checkbox" id="pagament10" name="checkboxs" value="wifi"
+                    onclick="controlPagament('pagament10', 'subelementPagament10');">wifi
                 <div class="subelementPagament" id="subelementPagament10">
-                    <input type="radio" id="pagament10opcio1" name="wifipreu" value="0" checked onclick="controlDisablePagament('pagament10');" />
+                    <input type="radio" id="pagament10opcio1" name="wifipreu" value="0" checked
+                        onclick="controlDisablePagament('pagament10');" />
                     <label for="pagament10opcio1">gratis</label>
-                    <input type="radio" id="pagament10opcio2" name="wifipreu" class="checkboxs" onclick="controlDisablePagament('pagament10');"/>
+                    <input type="radio" id="pagament10opcio2" name="wifipreu" class="checkboxs"
+                        onclick="controlDisablePagament('pagament10');" />
                     <label for="pagament10opcio2">suplement adicional</label>
                     <input type="number" id="pagament10opcio3" style="width: 5em;" />
                     <label>en moneda:</label>
@@ -438,21 +468,29 @@
             <div class="subelementHotel">
                 <input type="checkbox" id="negocis1" name="checkboxs" value="fotocopiadora">Fax / fotocopiadora
                 <input type="checkbox" id="negocis2" name="checkboxs" value="centrenegocis">Centre de negocis
-                <input type="checkbox" id="negocis3" name="checkboxs" value="salesreunions">Instal·lacions per a reunions
+                <input type="checkbox" id="negocis3" name="checkboxs" value="salesreunions">Instal·lacions per a
+                reunions
                 <input type="checkbox" id="negocis4" name="checkboxs" value="auditori">Auditori
             </div>
         </div>
         <hr>
+        <div class="elementHotel">
+            <label>Exclusiu per a adults</label>
+            <input type="checkbox" id="adultsHotel" name="checkboxs" value="adults">
+        </div>
         <!--** Mascotes**-->
         <div class="elementHotel">
             <label>Mascotes admeses:</label>
             <input type="checkbox" id="mascotes" name="checkboxs" onclick="controlMascotes()">
             <div id="dvMascotes" class="subelementHotel">
-                <input type="radio" id="preuMascotaD" name="preuMascotaTipus" value="consultar" checked onclick="controlDisableMascotes();">
+                <input type="radio" id="preuMascotaD" name="preuMascotaTipus" value="consultar" checked
+                    onclick="controlDisableMascotes();">
                 <label for="preuMascotaD">a petició (segons el cas; consultar amb l'hotel)</label><br>
-                <input type="radio" id="preuMascotaN" name="preuMascotaTipus" value="nocost" onclick="controlDisableMascotes();">
+                <input type="radio" id="preuMascotaN" name="preuMascotaTipus" value="nocost"
+                    onclick="controlDisableMascotes();">
                 <label for="preuMascotaN">sense càrrec</label><br>
-                <input type="radio" id="preuMascotaY" name="preuMascotaTipus" value="cost" onclick="controlDisableMascotes();">
+                <input type="radio" id="preuMascotaY" name="preuMascotaTipus" value="cost"
+                    onclick="controlDisableMascotes();">
                 <label for="preuMascotes">suplement per animal: </label>
                 <input type="number" id="preuMascotes" style="width: 5em;" />
                 <label for="monedaMascota">en moneda:</label>
