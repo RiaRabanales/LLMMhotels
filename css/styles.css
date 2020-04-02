@@ -1,0 +1,121 @@
+body {
+    background-color: #17252A;
+}
+
+header {
+    border-bottom: 2px solid #17252A;
+    position: sticky;
+    top: 0;
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+aside {
+    border: 1px solid #2B7A78;
+    background-color: #DEF2F1;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+    width: 400px;
+}
+
+main {
+    border: 1px solid #2B7A78;
+    background-color: #FEFFFF;
+    color: #17252A;
+    padding: 15px;
+    margin: 5px;
+    float: left;
+    width: 1010px;
+    max-width: 96%;
+}
+
+footer {
+    background-color: #3AAFA9;
+    color: #FEFFFF;
+    padding: 20px;
+    margin: 5px;
+    clear: left;
+    text-align: right;
+}
+
+button {
+    margin-left: 10px;
+}
+
+h5 {
+    color: #2B7A78;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+#JsonText {
+    margin: 10px;
+}
+
+#modificar {
+    display: none;
+}
+
+#dvMenjador {
+    margin-left: 6px;
+}
+
+#dvBerenar, #dvSopar, #dvDinar {
+    display: none;
+    margin-left: 6px;
+    font-size: 90%;
+    font-style: italic;
+}
+
+#dvPreuBerenar, #dvPreuSopar, #dvPreuDinar {
+    display: inline-block;
+    margin-left: 22px;
+}
+
+#dvMascotes{
+    display:none;
+}
+
+.elementHotel {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+.elementPagament {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+    font-size: 90%;
+    font-style: italic;
+}
+
+.subelementHotel {
+    margin-left: 6px;
+    font-size: 90%;
+    font-style: italic;
+}
+
+.subelementPagament {
+    display: inline-block;
+    font-size: 90%;
+}
+
+.dvbutton {
+    text-align: right;
+    margin: 10px;
+}
+
+.error {
+    border: 2px solid #3AAFA9;
+}
