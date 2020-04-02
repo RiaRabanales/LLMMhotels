@@ -2,7 +2,7 @@
 var comptadorHotels = 0;
 var llistaIdiomes = new Array();
 var arrMonedes = ["monedaBerenar", "monedaSopar", "monedaDinar", "monedaMascota", "pagament1opcio4", "pagament2opcio4", "pagament3opcio4", "pagament4opcio4",
-    "pagament5opcio4", "pagament6opcio4", "pagament7opcio4", "pagament8opcio4", "pagament9opcio4"];
+    "pagament5opcio4", "pagament6opcio4", "pagament7opcio4", "pagament8opcio4", "pagament9opcio4", "pagament10opcio4"];
 //Constantes: https://www.javascripttutorial.net/es6/javascript-const/
 const NUMSERVEIS = 9;
 const NUMALTRES = 10;
@@ -32,7 +32,6 @@ function generarObjHotel(id) {
     var hotel = new Object();
     hotel.id = id;
     hotel.nom = document.getElementById("nomHotel").value;
-    //TODO: validar strings
     hotel.mail = document.getElementById("emailHotel").value;
     hotel.website = document.getElementById("websiteHotel").value;
     hotel.tel = document.getElementById("telefonHotel").value;
@@ -47,6 +46,9 @@ function generarObjHotel(id) {
     }
     hotel.altres = generarArrayAltres();
     hotel.negocis = generarArrayNegocis();
+    if (document.getElementById("adultsHotel").checked) {
+        hotel.adults = document.getElementById("adultsHotel").value;
+    }
     if (document.getElementById("mascotes").checked) {
         hotel.mascotes = generarObjMascotes();
     }
@@ -71,7 +73,6 @@ function generarArrayServeis() {
     var arrServeis = new Array();
     for (i = 1; i <= NUMSERVEIS; i++) {
         var idServeis = "sgeneral" + i;
-        console.log(idServeis)
         if (document.getElementById(idServeis).checked) {
             arrServeis.push(generarObjServeis(idServeis));
         }
@@ -168,6 +169,7 @@ function generarArrayAltres() {
     var arrAltres = new Array();
     for (i = 1; i <= NUMALTRES; i++) {
         var idAltresServeis = "pagament" + i;
+        console.log(idAltresServeis);
         if (document.getElementById(idAltresServeis).checked) {
             arrAltres.push(generarObjAltres(idAltresServeis));
         }
@@ -178,8 +180,8 @@ function generarArrayAltres() {
 function generarObjAltres(element) {
     var objAltres = new Object();
     var arrayPagament = new Array();
-    for (i = 1; i <= 4; i++) {
-        var idOpcio = element + "opcio" + i;
+    for (j = 1; j <= 4; j++) {
+        var idOpcio = element + "opcio" + j;
         arrayPagament.push(idOpcio);
     }
     if (document.getElementById(arrayPagament[0]).checked) {
@@ -336,7 +338,7 @@ function modificarHotel(idLi) {
         document.getElementById("mascotes").checked = true;
         controlMascotes();
     }
-    
+
     llistaIdiomes = objHotel.idiomes;    //aquí no agafo res de la pàgina, no cal document.
     controlIdiomes();
     document.getElementById("idHotel").value = idLi;
@@ -467,8 +469,9 @@ function netejarCamps() {
         document.getElementById(checks[i].id).checked = false;
     }
     netejarMenjador();
-    netejarMascotes();
+    netejarPagament();
     controlNetejaPagament();
+    netejarMascotes();
     llistaIdiomes = [];
     document.getElementById("idiomesHotel").value = "espanyol";
     document.getElementById("idHotel").value = "";
@@ -500,6 +503,21 @@ function netejarMenjador() {
     document.getElementById("ivaDinar").value = "";
     document.getElementById("preuNetDinar").value = "";
     document.getElementById("monedaDinar").value = "0";
+}
+
+function netejarPagament(concepte) {
+    for (i = 1; i <= NUMALTRES; i++) {
+        var idPagament = "pagament" + i;
+        var arrayPagament = new Array();
+        for (j = 1; j <= 4; j++) {
+            var idOpcio = idPagament + "opcio" + j;
+            arrayPagament.push(idOpcio);
+        }
+        document.getElementById(arrayPagament[0]).checked = true;
+        document.getElementById(arrayPagament[1]).checked = false;
+        document.getElementById(arrayPagament[2]).value = "";
+        document.getElementById(arrayPagament[3]).value = 0;
+    }
 }
 
 function netejarMascotes() {
@@ -635,26 +653,26 @@ function controlNetejaPagament() {
     }
 }
 
-function controlPagament(concepte, dvconcepte) {
-    if (document.getElementById(concepte).checked) {
-        document.getElementById(dvconcepte).style.display = "inline-block";
-        controlDisablePagament(concepte);
-    } else {
-        document.getElementById(dvconcepte).style.display = "none";
+    function controlPagament(concepte, dvconcepte) {
+        if (document.getElementById(concepte).checked) {
+            document.getElementById(dvconcepte).style.display = "inline-block";
+            controlDisablePagament(concepte);
+        } else {
+            document.getElementById(dvconcepte).style.display = "none";
+        }
     }
-}
 
-function controlDisablePagament(concepte) {
-    var arrayPagament = new Array();
-    for (i = 1; i <= 4; i++) {
-        var idOpcio = concepte + "opcio" + i;
-        arrayPagament.push(idOpcio);
+    function controlDisablePagament(concepte) {
+        var arrayPagament = new Array();
+        for (k = 1; k <= 4; k++) {
+            var idOpcio = concepte + "opcio" + k;
+            arrayPagament.push(idOpcio);
+        }
+        if (!document.getElementById(arrayPagament[1]).checked) {
+            document.getElementById(arrayPagament[2]).disabled = true;
+            document.getElementById(arrayPagament[3]).disabled = true;
+        } else {
+            document.getElementById(arrayPagament[2]).disabled = false;
+            document.getElementById(arrayPagament[3]).disabled = false;
+        }
     }
-    if (!document.getElementById(arrayPagament[1]).checked) {
-        document.getElementById(arrayPagament[2]).disabled = true;
-        document.getElementById(arrayPagament[3]).disabled = true;
-    } else {
-        document.getElementById(arrayPagament[2]).disabled = false;
-        document.getElementById(arrayPagament[3]).disabled = false;
-    }
-}
