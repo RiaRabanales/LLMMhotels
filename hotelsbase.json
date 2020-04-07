@@ -1,0 +1,257 @@
+[
+    {
+        "id": 0,
+        "nom": "Gent Gran Hotels",
+        "mail": "gentgran@hotels.com",
+        "website": "",
+        "tel": "915656565",
+        "tel2": "915656566",
+        "direccio": {
+            "tipus": "carrer",
+            "carrer": "Princesa",
+            "num": "11",
+            "codipostal": "28008",
+            "poblacio": "Madrid",
+            "comunitat": "madrid"
+        },
+        "estrelles": "2",
+        "moneda": "eur",
+        "serveis": [
+            {
+                "id": "sgeneral2",
+                "valor": "calefacció"
+            },
+            {
+                "id": "sgeneral5",
+                "valor": "premsa"
+            },
+            {
+                "id": "sgeneral6",
+                "valor": "caixaforta"
+            },
+            {
+                "id": "sgeneral7",
+                "valor": "extintors"
+            }
+        ],
+        "recepcio": [
+            {
+                "id": "recepcio1",
+                "valor": "guardaequipatges"
+            }
+        ],
+        "altres": [
+            {
+                "preu": "0"
+            }
+        ],
+        "negocis": [],
+        "adults": "adults",
+        "idiomes": [
+            "espanyol",
+            "angles"
+        ]
+    },
+    {
+        "id": 1,
+        "nom": "Perritos Palma",
+        "mail": "perritos@hotelspalma.es",
+        "website": "www.perritoshotels.com",
+        "tel": "971488488",
+        "tel2": "",
+        "direccio": {
+            "tipus": "carrer",
+            "carrer": "Perez Galdos",
+            "num": "30",
+            "codipostal": "07006",
+            "poblacio": "Palma",
+            "comunitat": "balears"
+        },
+        "estrelles": "5",
+        "moneda": "eur",
+        "serveis": [
+            {
+                "id": "sgeneral1",
+                "valor": "aireacondicionat"
+            },
+            {
+                "id": "sgeneral2",
+                "valor": "calefacció"
+            },
+            {
+                "id": "sgeneral3",
+                "valor": "ascensor"
+            },
+            {
+                "id": "sgeneral4",
+                "valor": "insonoritzacio"
+            },
+            {
+                "id": "sgeneral7",
+                "valor": "extintors"
+            },
+            {
+                "id": "sgeneral8",
+                "valor": "detectorsfum"
+            },
+            {
+                "id": "sgeneral9",
+                "valor": "caixaforta"
+            }
+        ],
+        "recepcio": [
+            {
+                "id": "recepcio1",
+                "valor": "guardaequipatges"
+            },
+            {
+                "id": "recepcio3",
+                "valor": "infoturistica"
+            },
+            {
+                "id": "recepcio4",
+                "valor": "recepcio24"
+            }
+        ],
+        "menjador": {
+            "berenar": {
+                "cost": {
+                    "preuBrut": "19",
+                    "iva": "10",
+                    "moneda": "eur"
+                }
+            },
+            "sopar": {
+                "cost": "alacarta"
+            },
+            "dinar": {
+                "cost": "alacarta"
+            }
+        },
+        "altres": [
+            {
+                "preu": "15",
+                "moneda": "eur"
+            },
+            {
+                "preu": "0"
+            },
+            {
+                "preu": "0"
+            },
+            {
+                "preu": "15",
+                "moneda": "eur"
+            },
+            {
+                "preu": "0"
+            }
+        ],
+        "negocis": [
+            {
+                "id": "negocis1",
+                "valor": "fotocopiadora"
+            }
+        ],
+        "mascotes": {
+            "cost": {
+                "preu": "12",
+                "moneda": "eur",
+                "tipus": "perestancia"
+            }
+        },
+        "idiomes": [
+            "espanyol",
+            "catala",
+            "angles",
+            "alemany",
+            "japones",
+            "altres"
+        ]
+    },
+    {
+        "id": 2,
+        "nom": "Hotel La Seu",
+        "mail": "laseuhotel@hotelspalma.com",
+        "website": "",
+        "tel": "971717171",
+        "tel2": "971717172",
+        "direccio": {
+            "tipus": "carrer",
+            "carrer": "Nou",
+            "num": "12",
+            "codipostal": "07001",
+            "poblacio": "Palma",
+            "comunitat": "balears"
+        },
+        "estrelles": "4",
+        "moneda": "eur",
+        "serveis": [
+            {
+                "id": "sgeneral1",
+                "valor": "aireacondicionat"
+            },
+            {
+                "id": "sgeneral2",
+                "valor": "calefacció"
+            },
+            {
+                "id": "sgeneral4",
+                "valor": "insonoritzacio"
+            },
+            {
+                "id": "sgeneral6",
+                "valor": "caixaforta"
+            },
+            {
+                "id": "sgeneral7",
+                "valor": "extintors"
+            },
+            {
+                "id": "sgeneral8",
+                "valor": "detectorsfum"
+            },
+            {
+                "id": "sgeneral9",
+                "valor": "caixaforta"
+            }
+        ],
+        "recepcio": [
+            {
+                "id": "recepcio1",
+                "valor": "guardaequipatges"
+            },
+            {
+                "id": "recepcio3",
+                "valor": "infoturistica"
+            },
+            {
+                "id": "recepcio4",
+                "valor": "recepcio24"
+            }
+        ],
+        "menjador": {
+            "berenar": {
+                "cost": {
+                    "preuBrut": "10",
+                    "iva": "10",
+                    "moneda": "eur"
+                }
+            }
+        },
+        "altres": [
+            {
+                "preu": "0"
+            },
+            {
+                "preu": "0"
+            }
+        ],
+        "negocis": [],
+        "idiomes": [
+            "espanyol",
+            "catala",
+            "alemany"
+        ]
+    }
+]
