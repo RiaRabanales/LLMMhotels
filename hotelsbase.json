@@ -1,257 +1,844 @@
-[
-    {
-        "id": 0,
-        "nom": "Gent Gran Hotels",
-        "mail": "gentgran@hotels.com",
-        "website": "",
-        "tel": "915656565",
-        "tel2": "915656566",
-        "direccio": {
-            "tipus": "carrer",
-            "carrer": "Princesa",
-            "num": "11",
-            "codipostal": "28008",
-            "poblacio": "Madrid",
-            "comunitat": "madrid"
+{
+    "hotels": [
+        {
+            "id": 0,
+            "nom": "Gent Gran Hotels",
+            "mail": "gentgran@hotels.com",
+            "website": "",
+            "tel": "915656565",
+            "tel2": "915656566",
+            "direccio": {
+                "tipus": "carrer",
+                "carrer": "Princesa",
+                "num": "11",
+                "codipostal": "28008",
+                "poblacio": "Madrid",
+                "comunitat": "madrid"
+            },
+            "estrelles": "2",
+            "moneda": "eur",
+            "serveis": [
+                {
+                    "id": "sgeneral2",
+                    "valor": "calefacció"
+                },
+                {
+                    "id": "sgeneral5",
+                    "valor": "premsa"
+                },
+                {
+                    "id": "sgeneral6",
+                    "valor": "caixaforta"
+                },
+                {
+                    "id": "sgeneral7",
+                    "valor": "extintors"
+                }
+            ],
+            "recepcio": [
+                {
+                    "id": "recepcio1",
+                    "valor": "guardaequipatges"
+                }
+            ],
+            "altres": [
+                {
+                    "preu": "0"
+                }
+            ],
+            "negocis": [],
+            "adults": "adults",
+            "idiomes": [
+                "espanyol",
+                "angles"
+            ],
+            "habitacions": [
+                {
+                    "id": 1,
+                    "tipus": "doble",
+                    "nom": "primavera",
+                    "superficie": {
+                        "valor": 22,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "individual": 2
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "minibar",
+                        "aire condicionat",
+                        "caixa forta",
+                        "moqueta",
+                        "escriptori",
+                        "telèfon",
+                        "TV de pantalla plana",
+                        "endoll a prop del llit",
+                        "servei de despertador"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "dutxa",
+                            "tovalloles",
+                            "llençols",
+                            "assecador",
+                            "paper de vàter"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 2,
+                                "preuBase": 60,
+                                "imposts": 21,
+                                "comissio": 10,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 75,
+                                "imposts": 21,
+                                "comissio": 7,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 2,
+                                "preuBase": 45,
+                                "imposts": 21,
+                                "comissio": 10,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "tipus": "doble",
+                    "nom": "estiu",
+                    "superficie": {
+                        "valor": 11,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "doble": 1
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "minibar",
+                        "aire condicionat",
+                        "caixa forta",
+                        "moqueta",
+                        "escriptori",
+                        "telèfon",
+                        "TV",
+                        "servei de despertador"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "llençols",
+                            "assecador",
+                            "paper de vàter"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 3,
+                                "preuBase": 75,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 3,
+                                "preuBase": 66,
+                                "imposts": 21,
+                                "comissio": 5,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "tipus": "doble superior",
+                    "nom": "hivern",
+                    "superficie": {
+                        "valor": 23,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "doble": 1,
+                            "individual": 1
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "minibar",
+                        "aire condicionat",
+                        "caixa forta",
+                        "moqueta",
+                        "escriptori",
+                        "telèfon",
+                        "TV de pantalla plana",
+                        "endoll a prop del llit",
+                        "servei de despertador"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "banyera",
+                            "tovalloles",
+                            "llençols",
+                            "assecador",
+                            "paper de vàter"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 83,
+                                "imposts": 21,
+                                "comissio": 7,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 80,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 3,
+                                "preuBase": 66,
+                                "imposts": 21,
+                                "comissio": 7,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
-        "estrelles": "2",
-        "moneda": "eur",
-        "serveis": [
-            {
-                "id": "sgeneral2",
-                "valor": "calefacció"
+        {
+            "id": 1,
+            "nom": "Perritos Palma",
+            "mail": "perritos@hotelspalma.es",
+            "website": "www.perritoshotels.com",
+            "tel": "971488488",
+            "tel2": "",
+            "direccio": {
+                "tipus": "carrer",
+                "carrer": "Perez Galdos",
+                "num": "30",
+                "codipostal": "07006",
+                "poblacio": "Palma",
+                "comunitat": "balears"
             },
-            {
-                "id": "sgeneral5",
-                "valor": "premsa"
-            },
-            {
-                "id": "sgeneral6",
-                "valor": "caixaforta"
-            },
-            {
-                "id": "sgeneral7",
-                "valor": "extintors"
-            }
-        ],
-        "recepcio": [
-            {
-                "id": "recepcio1",
-                "valor": "guardaequipatges"
-            }
-        ],
-        "altres": [
-            {
-                "preu": "0"
-            }
-        ],
-        "negocis": [],
-        "adults": "adults",
-        "idiomes": [
-            "espanyol",
-            "angles"
-        ]
-    },
-    {
-        "id": 1,
-        "nom": "Perritos Palma",
-        "mail": "perritos@hotelspalma.es",
-        "website": "www.perritoshotels.com",
-        "tel": "971488488",
-        "tel2": "",
-        "direccio": {
-            "tipus": "carrer",
-            "carrer": "Perez Galdos",
-            "num": "30",
-            "codipostal": "07006",
-            "poblacio": "Palma",
-            "comunitat": "balears"
-        },
-        "estrelles": "5",
-        "moneda": "eur",
-        "serveis": [
-            {
-                "id": "sgeneral1",
-                "valor": "aireacondicionat"
-            },
-            {
-                "id": "sgeneral2",
-                "valor": "calefacció"
-            },
-            {
-                "id": "sgeneral3",
-                "valor": "ascensor"
-            },
-            {
-                "id": "sgeneral4",
-                "valor": "insonoritzacio"
-            },
-            {
-                "id": "sgeneral7",
-                "valor": "extintors"
-            },
-            {
-                "id": "sgeneral8",
-                "valor": "detectorsfum"
-            },
-            {
-                "id": "sgeneral9",
-                "valor": "caixaforta"
-            }
-        ],
-        "recepcio": [
-            {
-                "id": "recepcio1",
-                "valor": "guardaequipatges"
-            },
-            {
-                "id": "recepcio3",
-                "valor": "infoturistica"
-            },
-            {
-                "id": "recepcio4",
-                "valor": "recepcio24"
-            }
-        ],
-        "menjador": {
-            "berenar": {
-                "cost": {
-                    "preuBrut": "19",
-                    "iva": "10",
-                    "moneda": "eur"
+            "estrelles": "5",
+            "moneda": "eur",
+            "serveis": [
+                {
+                    "id": "sgeneral1",
+                    "valor": "aireacondicionat"
+                },
+                {
+                    "id": "sgeneral2",
+                    "valor": "calefacció"
+                },
+                {
+                    "id": "sgeneral3",
+                    "valor": "ascensor"
+                },
+                {
+                    "id": "sgeneral4",
+                    "valor": "insonoritzacio"
+                },
+                {
+                    "id": "sgeneral7",
+                    "valor": "extintors"
+                },
+                {
+                    "id": "sgeneral8",
+                    "valor": "detectorsfum"
+                },
+                {
+                    "id": "sgeneral9",
+                    "valor": "caixaforta"
+                }
+            ],
+            "recepcio": [
+                {
+                    "id": "recepcio1",
+                    "valor": "guardaequipatges"
+                },
+                {
+                    "id": "recepcio3",
+                    "valor": "infoturistica"
+                },
+                {
+                    "id": "recepcio4",
+                    "valor": "recepcio24"
+                }
+            ],
+            "menjador": {
+                "berenar": {
+                    "cost": {
+                        "preuBrut": "19",
+                        "iva": "10",
+                        "moneda": "eur"
+                    }
+                },
+                "sopar": {
+                    "cost": "alacarta"
+                },
+                "dinar": {
+                    "cost": "alacarta"
                 }
             },
-            "sopar": {
-                "cost": "alacarta"
-            },
-            "dinar": {
-                "cost": "alacarta"
-            }
-        },
-        "altres": [
-            {
-                "preu": "15",
-                "moneda": "eur"
-            },
-            {
-                "preu": "0"
-            },
-            {
-                "preu": "0"
-            },
-            {
-                "preu": "15",
-                "moneda": "eur"
-            },
-            {
-                "preu": "0"
-            }
-        ],
-        "negocis": [
-            {
-                "id": "negocis1",
-                "valor": "fotocopiadora"
-            }
-        ],
-        "mascotes": {
-            "cost": {
-                "preu": "12",
-                "moneda": "eur",
-                "tipus": "perestancia"
-            }
-        },
-        "idiomes": [
-            "espanyol",
-            "catala",
-            "angles",
-            "alemany",
-            "japones",
-            "altres"
-        ]
-    },
-    {
-        "id": 2,
-        "nom": "Hotel La Seu",
-        "mail": "laseuhotel@hotelspalma.com",
-        "website": "",
-        "tel": "971717171",
-        "tel2": "971717172",
-        "direccio": {
-            "tipus": "carrer",
-            "carrer": "Nou",
-            "num": "12",
-            "codipostal": "07001",
-            "poblacio": "Palma",
-            "comunitat": "balears"
-        },
-        "estrelles": "4",
-        "moneda": "eur",
-        "serveis": [
-            {
-                "id": "sgeneral1",
-                "valor": "aireacondicionat"
-            },
-            {
-                "id": "sgeneral2",
-                "valor": "calefacció"
-            },
-            {
-                "id": "sgeneral4",
-                "valor": "insonoritzacio"
-            },
-            {
-                "id": "sgeneral6",
-                "valor": "caixaforta"
-            },
-            {
-                "id": "sgeneral7",
-                "valor": "extintors"
-            },
-            {
-                "id": "sgeneral8",
-                "valor": "detectorsfum"
-            },
-            {
-                "id": "sgeneral9",
-                "valor": "caixaforta"
-            }
-        ],
-        "recepcio": [
-            {
-                "id": "recepcio1",
-                "valor": "guardaequipatges"
-            },
-            {
-                "id": "recepcio3",
-                "valor": "infoturistica"
-            },
-            {
-                "id": "recepcio4",
-                "valor": "recepcio24"
-            }
-        ],
-        "menjador": {
-            "berenar": {
-                "cost": {
-                    "preuBrut": "10",
-                    "iva": "10",
+            "altres": [
+                {
+                    "preu": "15",
                     "moneda": "eur"
+                },
+                {
+                    "preu": "0"
+                },
+                {
+                    "preu": "0"
+                },
+                {
+                    "preu": "15",
+                    "moneda": "eur"
+                },
+                {
+                    "preu": "0"
                 }
-            }
-        },
-        "altres": [
-            {
-                "preu": "0"
+            ],
+            "negocis": [
+                {
+                    "id": "negocis1",
+                    "valor": "fotocopiadora"
+                }
+            ],
+            "mascotes": {
+                "cost": {
+                    "preu": "12",
+                    "moneda": "eur",
+                    "tipus": "perestancia"
+                }
             },
-            {
-                "preu": "0"
-            }
-        ],
-        "negocis": [],
-        "idiomes": [
-            "espanyol",
-            "catala",
-            "alemany"
-        ]
-    }
-]
+            "idiomes": [
+                "espanyol",
+                "catala",
+                "angles",
+                "alemany",
+                "japones",
+                "altres"
+            ],
+            "habitacions": [
+                {
+                    "id": 1,
+                    "tipus": "doble",
+                    "nom": "Suite Nupcial",
+                    "superficie": {
+                        "valor": 33,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "doble": 1
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "despertador",
+                        "minibar",
+                        "aire condicionat",
+                        "ventilador",
+                        "caixa forta",
+                        "caixa forta per a portàtils",
+                        "planxa",
+                        "calefacció",
+                        "escriptori",
+                        "telèfon",
+                        "TV de pantalla plana",
+                        "iPad",
+                        "endoll a prop del llit",
+                        "servei de despertador"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "banyera d'hidromassatge",
+                            "tovalloles",
+                            "llençols",
+                            "assecador",
+                            "paper de vàter",
+                            "sabatilles",
+                            "bidet"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 180,
+                                "imposts": 21,
+                                "comissio": 5,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 180,
+                                "imposts": 21,
+                                "comissio": 4,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 150,
+                                "imposts": 21,
+                                "comissio": 4,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 155,
+                                "imposts": 21,
+                                "comissio": 4,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "tipus": "doble",
+                    "superficie": {
+                        "valor": 14,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "doble": 1,
+                            "supletori": 1
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "minibar",
+                        "aire condicionat",
+                        "caixa forta",
+                        "caixa forta per a portàtils",
+                        "planxa",
+                        "calefacció",
+                        "escriptori",
+                        "telèfon",
+                        "TV de pantalla plana",
+                        "iPad",
+                        "endoll a prop del llit",
+                        "servei de despertador"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "tovalloles",
+                            "llençols",
+                            "assecador",
+                            "paper de vàter",
+                            "bidet"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 80,
+                                "imposts": 21,
+                                "comissio": 5,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 85,
+                                "imposts": 21,
+                                "comissio": 4,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 75,
+                                "imposts": 21,
+                                "comissio": 5,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "tipus": "doble",
+                    "superficie": {
+                        "valor": 15,
+                        "unitat": "m2"
+                    },
+                    "fumadors": true,
+                    "llits": [
+                        {
+                            "individual": 2
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "minibar",
+                        "aire condicionat",
+                        "caixa forta",
+                        "calefacció",
+                        "escriptori",
+                        "telèfon",
+                        "TV",
+                        "endoll a prop del llit",
+                        "servei de despertador"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "banyera",
+                            "tovalloles",
+                            "llençols",
+                            "assecador",
+                            "paper de vàter",
+                            "bidet"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 75,
+                                "imposts": 21,
+                                "comissio": 5,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 75,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 60,
+                                "imposts": 21,
+                                "comissio": 5,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nom": "Hotel La Seu",
+            "mail": "laseuhotel@hotelspalma.com",
+            "website": "",
+            "tel": "971717171",
+            "tel2": "971717172",
+            "direccio": {
+                "tipus": "carrer",
+                "carrer": "Nou",
+                "num": "12",
+                "codipostal": "07001",
+                "poblacio": "Palma",
+                "comunitat": "balears"
+            },
+            "estrelles": "4",
+            "moneda": "eur",
+            "serveis": [
+                {
+                    "id": "sgeneral1",
+                    "valor": "aireacondicionat"
+                },
+                {
+                    "id": "sgeneral2",
+                    "valor": "calefacció"
+                },
+                {
+                    "id": "sgeneral4",
+                    "valor": "insonoritzacio"
+                },
+                {
+                    "id": "sgeneral6",
+                    "valor": "caixaforta"
+                },
+                {
+                    "id": "sgeneral7",
+                    "valor": "extintors"
+                },
+                {
+                    "id": "sgeneral8",
+                    "valor": "detectorsfum"
+                },
+                {
+                    "id": "sgeneral9",
+                    "valor": "caixaforta"
+                }
+            ],
+            "recepcio": [
+                {
+                    "id": "recepcio1",
+                    "valor": "guardaequipatges"
+                },
+                {
+                    "id": "recepcio3",
+                    "valor": "infoturistica"
+                },
+                {
+                    "id": "recepcio4",
+                    "valor": "recepcio24"
+                }
+            ],
+            "menjador": {
+                "berenar": {
+                    "cost": {
+                        "preuBrut": "10",
+                        "iva": "10",
+                        "moneda": "eur"
+                    }
+                }
+            },
+            "altres": [
+                {
+                    "preu": "0"
+                },
+                {
+                    "preu": "0"
+                }
+            ],
+            "negocis": [],
+            "idiomes": [
+                "espanyol",
+                "catala",
+                "alemany"
+            ],
+            "habitacions": [
+                {
+                    "id": 1,
+                    "tipus": "individual",
+                    "superficie": {
+                        "valor": 8,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "individual": 1
+                        }
+                    ],
+                    "installacions": [
+                        "taquilla",
+                        "moqueta"
+                    ],
+                    "bany": {
+                        "privat": false,
+                        "equipament": [
+                            "dutxa"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 3,
+                                "preuBase": 33,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 3,
+                                "preuBase": 26,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 2,
+                    "tipus": "doble",
+                    "superficie": {
+                        "valor": 10,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "individual": 2
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "aire condicionat",
+                        "caixa forta"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "assecador",
+                            "paper de vàter"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 45,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 2,
+                                "preuBase": 44,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 39,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": 3,
+                    "tipus": "doble",
+                    "superficie": {
+                        "valor": 11,
+                        "unitat": "m2"
+                    },
+                    "fumadors": false,
+                    "llits": [
+                        {
+                            "doble": 1
+                        }
+                    ],
+                    "installacions": [
+                        "armari",
+                        "aire condicionat",
+                        "caixa forta"
+                    ],
+                    "bany": {
+                        "privat": true,
+                        "equipament": [
+                            "articles de bany gratuïts",
+                            "dutxa",
+                            "paper de vàter"
+                        ]
+                    },
+                    "tarifes": {
+                        "temporadaAlta": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 45,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 2,
+                                "preuBase": 44,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            }
+                        ],
+                        "temporadaBaixa": [
+                            {
+                                "agregador": 1,
+                                "preuBase": 39,
+                                "imposts": 21,
+                                "comissio": 6,
+                                "moneda": "eur"
+                            },
+                            {
+                                "agregador": 3,
+                                "preuBase": 30,
+                                "imposts": 21,
+                                "comissio": 7,
+                                "moneda": "eur"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "agregadors": [
+        {
+            "id": "1",
+            "nom": "Hotelbeds",
+            "website": "https://www.hotelbeds.com/home"
+        },
+        {
+            "id": "2",
+            "nom": "Jumbotours",
+            "website": "https://www.jumbotours.com/"
+        },
+        {
+            "id": "3",
+            "nom": "Trivago",
+            "website": "https://www.trivago.es/es?sLanguageLocale=ES"
+        }
+    ]
+}
