@@ -43,6 +43,7 @@
             ],
             "altres": [
                 {
+                    "value":"gimnas",
                     "preu": "0"
                 }
             ],
@@ -320,20 +321,25 @@
             },
             "altres": [
                 {
+                    "value":"bicis",
                     "preu": "15",
                     "moneda": "eur"
                 },
                 {
+                    "value":"piscina",
                     "preu": "0"
                 },
                 {
+                    "value":"gimnas",
                     "preu": "0"
                 },
                 {
+                    "value":"discoteca",
                     "preu": "15",
                     "moneda": "eur"
                 },
                 {
+                    "value":"wifi",
                     "preu": "0"
                 }
             ],
@@ -648,9 +654,11 @@
             },
             "altres": [
                 {
+                    "value":"parquing",
                     "preu": "0"
                 },
                 {
+                    "value":"wifi",
                     "preu": "0"
                 }
             ],
