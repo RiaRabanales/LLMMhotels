@@ -821,7 +821,8 @@
                     }
                 }
             ]
-        }
+        },
+    "descripcio": "L'hotel La Seu Palma està situat al nucli antic de Palma, a 400 metres del port de Palma i a 1,2 km del club nàutic de Palma. L'hotel,que abans era una botiga d'antiguitats, té una col·lecció d'art i antiguitats. La catedral es troba a 5 minuts a peu. Aquesta és una de les zones preferides de Palma pels nostres clients, segons comentaris independents. A les parelles els ha agradat especialment la ubicació."
     ],
     "agregadors": [
         {
@@ -839,6 +840,5 @@
             "nom": "Trivago",
             "website": "https://www.trivago.es/es?sLanguageLocale=ES"
         }
-    ],
-    "descripcio": "L'hotel La Seu Palma està situat al nucli antic de Palma, a 400 metres del port de Palma i a 1,2 km del club nàutic de Palma. L'hotel,que abans era una botiga d'antiguitats, té una col·lecció d'art i antiguitats. La catedral es troba a 5 minuts a peu. Aquesta és una de les zones preferides de Palma pels nostres clients, segons comentaris independents. A les parelles els ha agradat especialment la ubicació."
+    ]
 }
