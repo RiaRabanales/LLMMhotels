@@ -43,7 +43,7 @@
             ],
             "altres": [
                 {
-                    "value":"gimnas",
+                    "value": "gimnas",
                     "preu": "0"
                 }
             ],
@@ -63,11 +63,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "individual": 2
-                        }
-                    ],
+                    "llits": {
+                        "individual": 2,
+                        "doble": 0
+                    },
                     "installacions": [
                         "armari",
                         "minibar",
@@ -127,11 +126,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "doble": 1
-                        }
-                    ],
+                    "llits": {
+                        "individual": 0,
+                        "doble": 1
+                    },
                     "installacions": [
                         "armari",
                         "minibar",
@@ -183,12 +181,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "doble": 1,
-                            "individual": 1
-                        }
-                    ],
+                    "llits": {
+                        "individual": 1,
+                        "doble": 1
+                    },
                     "installacions": [
                         "armari",
                         "minibar",
@@ -321,25 +317,25 @@
             },
             "altres": [
                 {
-                    "value":"bicis",
+                    "value": "bicis",
                     "preu": "15",
                     "moneda": "eur"
                 },
                 {
-                    "value":"piscina",
+                    "value": "piscina",
                     "preu": "0"
                 },
                 {
-                    "value":"gimnas",
+                    "value": "gimnas",
                     "preu": "0"
                 },
                 {
-                    "value":"discoteca",
+                    "value": "discoteca",
                     "preu": "15",
                     "moneda": "eur"
                 },
                 {
-                    "value":"wifi",
+                    "value": "wifi",
                     "preu": "0"
                 }
             ],
@@ -374,11 +370,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "doble": 1
-                        }
-                    ],
+                    "llits": {
+                        "individual": 0,
+                        "doble": 1
+                    },
                     "installacions": [
                         "armari",
                         "despertador",
@@ -453,12 +448,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "doble": 1,
-                            "supletori": 1
-                        }
-                    ],
+                    "llits": {
+                        "individual": 1,
+                        "doble": 2
+                    },
                     "installacions": [
                         "armari",
                         "minibar",
@@ -522,11 +515,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": true,
-                    "llits": [
-                        {
-                            "individual": 2
-                        }
-                    ],
+                    "llits": {
+                        "individual": 2,
+                        "doble": 0
+                    },
                     "installacions": [
                         "armari",
                         "minibar",
@@ -654,11 +646,11 @@
             },
             "altres": [
                 {
-                    "value":"parquing",
+                    "value": "parquing",
                     "preu": "0"
                 },
                 {
-                    "value":"wifi",
+                    "value": "wifi",
                     "preu": "0"
                 }
             ],
@@ -677,11 +669,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "individual": 1
-                        }
-                    ],
+                    "llits": {
+                        "individual": 1,
+                        "doble": 0
+                    },
                     "installacions": [
                         "taquilla",
                         "moqueta"
@@ -721,11 +712,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "individual": 2
-                        }
-                    ],
+                    "llits": {
+                        "individual": 2,
+                        "doble": 0
+                    },
                     "installacions": [
                         "armari",
                         "aire condicionat",
@@ -776,11 +766,10 @@
                         "unitat": "m2"
                     },
                     "fumadors": false,
-                    "llits": [
-                        {
-                            "doble": 1
-                        }
-                    ],
+                    "llits": {
+                        "individual": 0,
+                        "doble": 1
+                    },
                     "installacions": [
                         "armari",
                         "aire condicionat",
