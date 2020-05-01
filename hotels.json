@@ -237,7 +237,8 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "descripcio": "Un dels nostres preferits a Madrid! Aquest hotel de disseny ofereix carta de coixins i ampolles d'aigua gratuïtes a l'habitació. L'establiment és a 20 minuts amb cotxe del recinte firal IFEMA de Madrid. Davant de l'hotel paren diversos autobusos que enllacen amb la Puerta del Sol. Les habitacions presenten un estil contemporani i disposen de bany privat. Aquest hotel està adaptat per a les persones de mobilitat reduïda d'acord amb la normativa oficial. Hi ha habitacions adaptades a petició, també per a persones amb discapacitat auditiva i visual. L'hotel és a 15 minuts a peu de l'estació de Chamartín i l'estació de metro de Pio XII i a 15 minuts amb cotxe de l'aeroport de Madrid-Barajas. L'establiment ofereix recepció oberta les 24 hores amb servei de lloguer de cotxes i un aparcament subterrani públic a prop."
         },
         {
             "id": 1,
@@ -572,7 +573,8 @@
                         ]
                     }
                 }
-            ]
+            ],
+            "descripcio" : "Un hotel pels amants dels animals. Aquest hotel, que ofereix vistes a la badia de Palma, inclou una piscina exterior, un jacuzzi i un gimnàs petit. Totes les habitacions disposen de balcó privat i algunes tenen vistes al mar. El centre històric de Palma i les botigues de la ciutat són a menys de 2 km."
         },
         {
             "id": 2,
@@ -837,5 +839,6 @@
             "nom": "Trivago",
             "website": "https://www.trivago.es/es?sLanguageLocale=ES"
         }
-    ]
+    ],
+    "descripcio": "L'hotel La Seu Palma està situat al nucli antic de Palma, a 400 metres del port de Palma i a 1,2 km del club nàutic de Palma. L'hotel,que abans era una botiga d'antiguitats, té una col·lecció d'art i antiguitats. La catedral es troba a 5 minuts a peu. Aquesta és una de les zones preferides de Palma pels nostres clients, segons comentaris independents. A les parelles els ha agradat especialment la ubicació."
 }
