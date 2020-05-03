@@ -51,7 +51,16 @@
                     "preu": "0"
                 }
             ],
-            "negocis": [],
+            "negocis": [
+                {
+                    "id":"negocis2",
+                    "valor":"centrenegocis"
+                },
+                {
+                    "id":"negocis3",
+                    "valor":"salesreunions"
+                }
+            ],
             "adults": "adults",
             "idiomes": [
                 "espanyol",
